@@ -5,6 +5,7 @@ import { PostsShow } from "./PostsShow";
 import { PostsIndex } from "./PostsIndex";
 import { Modal } from "./Modal";
 import { Signup } from "./Signup";
+import { Login } from "./Login";
 import "./Home.css"
 
 
@@ -36,6 +37,7 @@ export function Home() {
   return (
     <div className="container">
       <Signup />
+      <Login />
       <PostsNew />
       <PostsIndex posts={posts} onSelectPost={handleShowPost}/>
       <Modal show={isPostsShowModalVisible} onClose={handleHidePost}>
