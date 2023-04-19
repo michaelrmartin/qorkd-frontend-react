@@ -6,10 +6,10 @@ export function PostsNew() {
         <div className="form-control">
           Description: <input type="text" />
         </div>
-        <div className="form-control"v>
+        <div className="form-control">
           Wine Name: <input type="text" />
         </div>
-        <div className="form-control"v>
+        <div className="form-control">
           Rating: <input type="integer" />
         </div>
         <div className="form-control">

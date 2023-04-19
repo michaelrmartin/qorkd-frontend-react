@@ -1,20 +1,15 @@
 #root {
   font-weight: strong;
   font-family: "Raleway", Helvetica, Arial, sans-serif;
+}
+
+body {
   background-image: url("https://images.pexels.com/photos/6331082/pexels-photo-6331082.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
-#posts-index img {
-  width: 300px;
-}
-
 html {
   scroll-behavior: smooth;
-}
-
-.form-control {
-  max-width: 50%;
 }

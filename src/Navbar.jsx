@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { LogoutLink } from "./Logout";
 import "./Navbar.css"
 
 export function Navbar() {
@@ -31,7 +32,7 @@ export function Navbar() {
           <ul className="navbar-nav">
             <li className="nav-item">
               {isLoggedIn ? (
-                <a className="nav-link active" aria-current="page" href="/wines">
+                <a className="nav-link active" aria-current="page" href="/">
                   Home
                 </a>
               ) : (
@@ -79,9 +80,7 @@ export function Navbar() {
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/logout">
-                      Logout
-                    </a>
+                    < LogoutLink />
                   </li>
                 </ul>
               </li>

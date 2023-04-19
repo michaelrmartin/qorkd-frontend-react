@@ -1,30 +1,34 @@
 #posts-index {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-  grid-gap: 1rem;
+  grid-gap: 30px;
 }
 
-.posts {
+h1 {
+  text-align: center;
+}
+
+#posts-index .posts {
   width: 100%;
 }
 
-.card {
+#posts-index .card {
   margin: 2rem;
   height: 100%;
   width: 18rem;
-  border-width: 0.25rem;
+  border: 1px solid black;
   border-color: lightcoral;
 }
 
-.card-header {
+#posts-index .card-header {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   gap: 1rem;
-  height: 5rem;
+  height: 4rem;
 }
 
-.card-header-img {
+#posts-index .card-header-img {
   height: 40px;
   width: 40px;
   object-fit: scale-down;
@@ -32,12 +36,13 @@
   margin-right: 5px;
 }
 
-.card-img-top {
+#posts-index .card-img-top {
   width: 100%;
   height: 15vw;
   object-fit: contain;
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.1);
 }
 
-.btn-primary {
+#posts-index .btn-primary {
   margin: 10px;
 }

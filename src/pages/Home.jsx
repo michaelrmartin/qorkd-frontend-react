@@ -1,13 +1,12 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { PostsNew } from "./PostsNew";
-import { PostsShow } from "./PostsShow";
-import { PostsIndex } from "./PostsIndex";
-import { Modal } from "./Modal";
+import { PostsNew } from "../PostsNew";
+import { PostsShow } from "../PostsShow";
+import { PostsIndex } from "../PostsIndex";
+import { Modal } from "../Modal";
 import { Signup } from "./Signup";
 import { Login } from "./Login";
-import { Banner } from "./Banner"
-import { Routes, Route } from "react-router-dom";
+import { Banner } from "../Banner"
 import "./Home.css"
 
 
@@ -39,9 +38,6 @@ export function Home() {
   return (
     <div className="container">
       <Banner />
-      <Signup />
-      <Login />
-      <PostsNew />
       <PostsIndex posts={posts} onSelectPost={handleShowPost}/>
       <Modal show={isPostsShowModalVisible} onClose={handleHidePost}>
         <PostsShow post={currentPost} />
