@@ -37,10 +37,10 @@ export function Login() {
         ))}
       </ul>
       <form onSubmit={handleSubmit}>
-        <div>
+        <div className="form-control">
           Email: <input name="email" type="email" />
         </div>
-        <div>
+        <div className="form-control">
           Password: <input name="password" type="password" />
         </div>
         <button type="submit">Login</button>

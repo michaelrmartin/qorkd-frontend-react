@@ -3,16 +3,16 @@ export function PostsNew() {
     <div id="posts-new">
       <h1>New post</h1>
       <form>
-        <div>
+        <div className="form-control">
           Description: <input type="text" />
         </div>
-        <div>
+        <div className="form-control"v>
           Wine Name: <input type="text" />
         </div>
-        <div>
+        <div className="form-control"v>
           Rating: <input type="integer" />
         </div>
-        <div>
+        <div className="form-control">
           Image: <input type="text" />
         </div>
       </form>

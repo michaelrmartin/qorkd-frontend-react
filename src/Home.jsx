@@ -6,6 +6,8 @@ import { PostsIndex } from "./PostsIndex";
 import { Modal } from "./Modal";
 import { Signup } from "./Signup";
 import { Login } from "./Login";
+import { Banner } from "./Banner"
+import { Routes, Route } from "react-router-dom";
 import "./Home.css"
 
 
@@ -36,6 +38,7 @@ export function Home() {
 
   return (
     <div className="container">
+      <Banner />
       <Signup />
       <Login />
       <PostsNew />
