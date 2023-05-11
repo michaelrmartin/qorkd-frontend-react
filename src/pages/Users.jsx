@@ -10,7 +10,7 @@ export function Users () {
   const [currentUser, setCurrentUser] = useState({});
 
   const handleIndexUsers = () => {
-    axios.get("http://localhost:3000/users.json").then((response) => {
+    axios.get("http://qorkd.fly.dev/users.json").then((response) => {
       console.log(response.data);
       setUsers(response.data);
     });
