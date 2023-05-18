@@ -22,11 +22,13 @@ export function PostsIndex(props) {
             <div className="card-body">
               <h5 className="card-title">{post.wine_name}</h5>
               <p className="card-text">{post.description}</p>
+            </div>
+            <div className="card-footer">
               <div className="rating">Rating: {[...Array(post.rating)].map((star, index) => (
               <FontAwesomeIcon icon={faWineBottle} key={index} />
               ))}
               </div>
-          <button type="button" className="btn-primary" onClick={() => props.onSelectPost(post)}>More Info</button>
+          <button type="button" className="btn btn-primary" onClick={() => props.onSelectPost(post)}>More Info</button>
             </div>
         </div>
         </div>

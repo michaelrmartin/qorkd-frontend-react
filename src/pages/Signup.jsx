@@ -10,7 +10,7 @@ export function Signup() {
     setErrors([]);
     const params = new FormData(event.target);
     axios
-      .post("https://qorkd.fly.dev/users", params)
+      .post("/users", params)
       .then((response) => {
         console.log(response.data);
         event.target.reset();

@@ -16,7 +16,7 @@ export function Home() {
   const [currentPost, setCurrentPost] = useState({});
 
   const handleIndexPosts = () => {
-    axios.get("https://qorkd.fly.dev/posts.json").then((response) => {
+    axios.get("/posts.json").then((response) => {
       console.log(response.data);
       setPosts(response.data);
     });
