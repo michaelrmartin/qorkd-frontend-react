@@ -6,12 +6,11 @@ import { PostsIndex } from "../PostsIndex";
 import { Modal } from "../Modal";
 import { Signup } from "./Signup";
 import { Login } from "./Login";
-import { Banner } from "../Banner"
-import "./Home.css"
-
+import { Banner } from "../Banner";
+import "./Home.css";
 
 export function Home() {
-  const [posts, setPosts] = useState([])
+  const [posts, setPosts] = useState([]);
   const [isPostsShowModalVisible, setIsPostsShowModalVisible] = useState(false);
   const [currentPost, setCurrentPost] = useState({});
 
@@ -29,16 +28,15 @@ export function Home() {
   };
 
   const handleHidePost = () => {
-    setIsPostsShowModalVisible(false)
+    setIsPostsShowModalVisible(false);
   };
 
-
-  useEffect(handleIndexPosts, [])
+  useEffect(handleIndexPosts, []);
 
   return (
     <div className="container">
       <Banner />
-      <PostsIndex posts={posts} onSelectPost={handleShowPost}/>
+      <PostsIndex posts={posts} onSelectPost={handleShowPost} />
       <Modal show={isPostsShowModalVisible} onClose={handleHidePost}>
         <PostsShow post={currentPost} />
       </Modal>
