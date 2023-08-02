@@ -4,8 +4,6 @@ import { PostsNew } from "../PostsNew";
 import { PostsShow } from "../PostsShow";
 import { PostsIndex } from "../PostsIndex";
 import { Modal } from "../Modal";
-import { Signup } from "./Signup";
-import { Login } from "./Login";
 import { Banner } from "../Banner";
 import "./Home.css";
 
